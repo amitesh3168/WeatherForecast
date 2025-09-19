@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weatherly - Modern Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <h1>Weatherly</h1>
+      <div class="search-wrapper">
+        <input type="search" id="search-input" placeholder="Search city, state, or country…" aria-label="Search city" autocomplete="off" />
+        <button id="search-btn" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <button id="toggle-theme" aria-label="Toggle light/dark mode">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
+    </header>
+
+    <main>
+      <section class="current-weather-card" aria-live="polite" aria-atomic="true">
+        <div class="weather-icon" id="current-icon"></div>
+        <div class="current-info">
+          <h2 id="city-name">City Name</h2>
+          <p class="temperature" id="temperature">--°C</p>
+          <div class="stats">
+            <span id="humidity"><i class="fa-solid fa-droplet"></i> Humidity: --%</span>
+            <span id="wind"><i class="fa-solid fa-wind"></i> Wind: -- km/h</span>
+          </div>
+          <p id="weather-desc">Weather description</p>
+        </div>
+      </section>
+
+      <section class="forecast" aria-label="Five day weather forecast">
+        <h3>5 Day Forecast</h3>
+        <div class="forecast-cards" id="forecast-cards">
+          </div>
+      </section>
+
+      <section class="explore">
+        <h3>Explore Random Cities</h3>
+        <div class="city-cards" id="explore-cities">
+          </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weatherly - Modern Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main-container">
+    <header>
+      <h1>Weatherly</h1>
+      <div class="search-wrapper">
+        <input type="search" id="search-input" placeholder="Search city, state, or country…" aria-label="Search city" autocomplete="off" />
+        <button id="search-btn" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <button id="toggle-theme" aria-label="Toggle light/dark mode">
+        <i class="fa-solid fa-circle-half-stroke"></i>
+      </button>
+    </header>
+
+    <main>
+      <section class="current-weather-card" aria-live="polite" aria-atomic="true">
+        <div class="weather-icon" id="current-icon"></div>
+        <div class="current-info">
+          <h2 id="city-name">City Name</h2>
+          <p class="temperature" id="temperature">--°C</p>
+          <div class="stats">
+            <span id="humidity"><i class="fa-solid fa-droplet"></i> Humidity: --%</span>
+            <span id="wind"><i class="fa-solid fa-wind"></i> Wind: -- km/h</span>
+          </div>
+          <p id="weather-desc">Weather description</p>
+        </div>
+      </section>
+
+      <section class="forecast" aria-label="Five day weather forecast">
+        <h3>5 Day Forecast</h3>
+        <div class="forecast-cards" id="forecast-cards">
+          </div>
+      </section>
+
+      <section class="explore">
+        <h3>Explore Random Cities</h3>
+        <div class="city-cards" id="explore-cities">
+          </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
